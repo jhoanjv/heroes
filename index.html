@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Los Guardianes de la Galaxia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styleMain.css">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABANJREFUWEftl09oHHUUxz9vNrFam4MxKq0WPPivghXbYpSC/9qDAasWoSAFi4VIdzMzaSEUe3L0oIJIk53ZxUYNYrHeJDQUPVQjakVpG0XwX0VKwYNCqqLVhHR3nszO7GY22ezMJpcgndu833vv933/309YZp8sMzz8/wCpbTrAc5Gnn5e8F/wv+luyhy4Bmut7dRyDyckNGGwF2Qq6Gbg84psGOQF6HJ/jdHVNiOP4rcSvpZDpvj3XU24bA+5KeclpVB4X1/0lJX/6KlPLuh/R94DOtMojvvP47BDP+yiNXCoPqdWXRaQAMQOEEyijiH6KtP9Yuaxcvg3R+4AngLtjABSVrLjuoSRQiYC0v68bDfKCTKTsB1SeFtf9oplytXMPo8YwwtqIr4z498pQ8WQzuaaAdP/+Dqb/+QbkxkjJ12Tat8jBg78nWRqc6969q/FLHwO3RPxnKfnrpVi8sJB8c0C2GeTM9kj4Z8raLYXC+TRgqjxRIZwGrgtpcljy7lMtA9J9uZsoGz/VBFU2iOt+Na8N2PaD4HeHdONLyefH5/FY1jZEj9boJX+1FIu/NgK1oIe03+pFdbgipIyK61U9FZJ27+5g1RXvgGyrV6xjXJjaKSMjf8fp2m+eRNkUCldy8K0WAZlHUJ4MvcxOGfKO1F1g9x2dD6YWqDHJFx6t5zcHgFciA98W19uVCCiaS1W+HHBNZNHaeHPTMEwJfcV4KB4+te2N4J+KlP8GvFa9KD6Q60KmtqkNk62za4U4zkzNftt8FnhpocSM6Ack771ck8lmr6I907A6Je/VcKQDVPI74qWqiwFUaSH//tUwTE0Aze4yQhbl2oqCst4qhcKZWQ8tImSWdTui37YUsroktMygy/aGNO2VfOGNJSV1v5lDCcYPiB6SocKexKSec+FjIKMhTT6QvNtTd95q2VvmOMIDUZE8Iq57rDVAAwNXMjMddOUVoaCxWfL5z+cqiSouqTEGm0IwQoJvhs6ujniRxHUmjY4XgQORwDnaZzbJq8OTjSxbiKamuQaDYKCuCZ0tL8iQW93B54k1B+Q4l/HH5CmUO0JXM0GmbYsMDv6ZBlQ0XD8E1tXkr+7qFscpLSSfYv3IrkczE7H14zt8donnVZtcQ92V9QPjdeCGiOEihn+nDBa/b2ZMIqCKY8K5FnRWI6bsE4RR8D9jqnSGlSsFLq7DDxJXggVtY4y3jMoz4rojSZ5NBagCyrLuQfx3Y7tRku7q+TlUtjfaFFqqskbMmsutoi3zJuiOdGjkMKVyrtlCNldPag/FBdW2b0a1B6EHNOgt1WfQFDCOyPuU9Zh43tl0wGe5FgWoHtylp3Rzpy+7t32rOZLEv+QcSrqg1fNlB+g/mEqcNJzkN/QAAAAASUVORK5CYII="
+        type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img class="imgHeader"
+            src="data:image/png;base64,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" />
+    </header>
+
+    <section>
+
+    </section>
+
+    <script>
+
+        async function populate() { //Funion asincronica con tecnologia ajaxS
+
+            const requestURL = 'heroes.json';
+            const request = new Request(requestURL);
+
+            const response = await fetch(request);
+            const superHeroesText = await response.text();
+
+            const superHeroes = JSON.parse(superHeroesText);
+            populateHeader(superHeroes);
+            populateHeroes(superHeroes);
+
+        }
+
+        function populateHeader(obj) {
+            const header = document.querySelector('header');
+            const myH1 = document.createElement('h1');
+            myH1.textContent = obj.nombreEquipo;
+            header.appendChild(myH1);
+
+            const myPara = document.createElement('p');
+            myPara.textContent = `Base secreta: ${obj.base} | En combate: ${obj.combate}`;
+            header.appendChild(myPara);
+        }
+
+        function populateHeroes(obj) {
+            const section = document.querySelector('section');
+            const heroes = obj.integrantes;
+
+            for (const hero of heroes) {
+                const myArticle = document.createElement('article');
+                const myH2 = document.createElement('h2');
+                const myPara1 = document.createElement('p');
+                const myPara2 = document.createElement('p');
+                const myPara3 = document.createElement('p');
+                const myPara4 = document.createElement('p');
+                const myList = document.createElement('ul');
+
+                myH2.textContent = hero.nombre;
+                myPara1.textContent = `Secret identity: ${hero.identidad}`;
+                myPara2.textContent = `Age: ${hero.edad}`;
+                myPara3.textContent = `Superpowers:`;
+                myPara4.textContent = ` ${hero.habilidades}`;
+
+                console.log(hero);
+                const superPowers = hero.habilidades;
+                for (const power of superPowers) {
+                    console.log(power);
+                    const listItem = document.createElement('li');
+                    listItem.textContent = power;
+                    myList.appendChild(listItem);
+                }
+
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myList);
+
+                section.appendChild(myArticle);
+            }
+        }
+
+        populate();
+
+    </script>
+</body>
+
+</html>

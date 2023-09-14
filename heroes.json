@@ -1,0 +1,95 @@
+{
+    "nombreEquipo": "Los Guardianes de la Galaxia",
+    "ciudad": "Metrópolis",
+    "formado": 2015,
+    "base": "Torre Suprema",
+    "combate": true,
+    "integrantes": [
+        {
+            "nombre": "Rayo Estelar",
+            "edad": "20",
+            "identidad": "Desconocida",
+            "habilidades": [
+                "Control de electricidad",
+                "Generación de rayos de energía",
+                "Vuelo supersónico",
+                "Resolución de problemas eléctricos"
+            ]
+        },
+        {
+            "nombre": "Dama Lunar",
+            "edad": "23",
+            "identidad": "Desconocida",
+            "habilidades": [
+                "Manipulación de fuerzas gravitacionales",
+                "Telequinesis",
+                "Desplazamiento aéreo"
+            ]
+        },
+        {
+            "nombre": "El Alquimista",
+            "edad": "Desconocida",
+            "identidad": "Desconocida",
+            "habilidades": [
+                "Conocimiento profundo de la química",
+                "Creación de sustancias y materiales",
+                "Neutralización de amenazas químicas",
+                "Ayuda en la investigación científica"
+            ]
+        },
+        {
+            "nombre": "Sombra Veloz",
+            "edad": "40",
+            "identidad": "Desconocida",
+            "habilidades": [
+                "Invisibilidad",
+                "Movimiento a través de las sombras",
+                "Sigilo y infiltración"
+            ]
+        },
+        {
+            "nombre": "Centella de Hielo",
+            "edad": "Desconocida",
+            "identidad": "Desconocida",
+            "habilidades": [
+                "Control del hielo y el frío",
+                "Creación de armas de hielo",
+                "Generación de campos de frío",
+                "Creación de plataformas de hielo"
+            ]
+        },
+        {
+            "nombre": "Espectro Sonoro",
+            "edad": "Desconocida",
+            "identidad": "Desconocida",
+            "habilidades": [
+                "Manipulación del sonido",
+                "Creación de ilusiones auditivas",
+                "Ensordecimiento",
+                "Explosiones de sonido"
+            ]
+        },
+        {
+            "nombre": "La Mariposa de Cristal",
+            "edad": "Desconocida",
+            "identidad": "Desconocida",
+            "habilidades": [
+                "Alas de cristal para volar",
+                "Cuerpo cubierto de armadura de cristal",
+                "Protección contra ataques físicos",
+                "Creación de rayos láser de cristal"
+            ]
+        },
+        {
+            "nombre": "Dr. Espiral",
+            "edad": "Desconocida",
+            "identidad": "Desconocida",
+            "habilidades": [
+                "Manipulación del tiempo y el espacio",
+                "Viaje en el tiempo",
+                "Teletransportación",
+                "Resolución de paradojas temporales"
+            ]
+        }
+    ]
+}
