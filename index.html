@@ -26,7 +26,7 @@
 
     <script>
 
-        async function populate() { //Funion asincronica con tecnologia ajaxS
+        async function view() { //Funion asincronica con tecnologia ajax
 
             const requestURL = 'heroes.json';
             const request = new Request(requestURL);
@@ -35,61 +35,61 @@
             const superHeroesText = await response.text();
 
             const superHeroes = JSON.parse(superHeroesText);
-            populateHeader(superHeroes);
-            populateHeroes(superHeroes);
+            viewHeader(superHeroes);
+            viewHeroes(superHeroes);
 
         }
 
-        function populateHeader(obj) {
+        function viewHeader(obj) {
             const header = document.querySelector('header');
-            const myH1 = document.createElement('h1');
-            myH1.textContent = obj.nombreEquipo;
-            header.appendChild(myH1);
+            const h1 = document.createElement('h1');
+            h1.textContent = obj.nombreEquipo;
+            header.appendChild(h1);
 
-            const myPara = document.createElement('p');
-            myPara.textContent = `Base secreta: ${obj.base} | En combate: ${obj.combate}`;
-            header.appendChild(myPara);
+            const para = document.createElement('p');
+            para.textContent = `Base secreta: ${obj.base} | En combate: ${obj.combate}`;
+            header.appendChild(para);
         }
 
-        function populateHeroes(obj) {
+        function viewHeroes(obj) {
             const section = document.querySelector('section');
             const heroes = obj.integrantes;
 
             for (const hero of heroes) {
-                const myArticle = document.createElement('article');
+                const article = document.createElement('article');
                 const myH2 = document.createElement('h2');
-                const myPara1 = document.createElement('p');
-                const myPara2 = document.createElement('p');
-                const myPara3 = document.createElement('p');
-                const myPara4 = document.createElement('p');
-                const myList = document.createElement('ul');
+                const para1 = document.createElement('p');
+                const para2 = document.createElement('p');
+                const para3 = document.createElement('p');
+                const para4 = document.createElement('p');
+                const list = document.createElement('ul');
 
                 myH2.textContent = hero.nombre;
-                myPara1.textContent = `Secret identity: ${hero.identidad}`;
-                myPara2.textContent = `Age: ${hero.edad}`;
-                myPara3.textContent = `Superpowers:`;
-                myPara4.textContent = ` ${hero.habilidades}`;
+                para1.textContent = `Secret identity: ${hero.identidad}`;
+                para2.textContent = `Age: ${hero.edad}`;
+                para3.textContent = `Powers:`;
+                para4.textContent = ` ${hero.habilidades}`;
 
                 console.log(hero);
-                const superPowers = hero.habilidades;
-                for (const power of superPowers) {
+                const powers = hero.habilidades;
+                for (const power of powers) {
                     console.log(power);
                     const listItem = document.createElement('li');
                     listItem.textContent = power;
-                    myList.appendChild(listItem);
+                    list.appendChild(listItem);
                 }
 
-                myArticle.appendChild(myH2);
-                myArticle.appendChild(myPara1);
-                myArticle.appendChild(myPara2);
-                myArticle.appendChild(myPara3);
-                myArticle.appendChild(myList);
+                article.appendChild(myH2);
+                article.appendChild(para1);
+                article.appendChild(para2);
+                article.appendChild(para3);
+                article.appendChild(list);
 
-                section.appendChild(myArticle);
+                section.appendChild(article);
             }
         }
 
-        populate();
+        view();
 
     </script>
 </body>
