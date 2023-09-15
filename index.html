@@ -57,14 +57,14 @@
 
             for (const hero of heroes) {
                 const article = document.createElement('article');
-                const myH2 = document.createElement('h2');
+                const h2 = document.createElement('h2');
                 const para1 = document.createElement('p');
                 const para2 = document.createElement('p');
                 const para3 = document.createElement('p');
                 const para4 = document.createElement('p');
                 const list = document.createElement('ul');
 
-                myH2.textContent = hero.nombre;
+                h2.textContent = hero.nombre;
                 para1.textContent = `Secret identity: ${hero.identidad}`;
                 para2.textContent = `Age: ${hero.edad}`;
                 para3.textContent = `Powers:`;
@@ -79,7 +79,7 @@
                     list.appendChild(listItem);
                 }
 
-                article.appendChild(myH2);
+                article.appendChild(h2);
                 article.appendChild(para1);
                 article.appendChild(para2);
                 article.appendChild(para3);
