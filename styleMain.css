@@ -41,7 +41,7 @@ section{
 
 article{
     text-align: center;
-    margin: 30px auto ;
+    margin: 0 auto 30px auto;
     padding: 20px;
     width: 350px;
     background: #e2daeb;
