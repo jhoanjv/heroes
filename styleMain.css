@@ -41,11 +41,10 @@ section{
 
 article{
     text-align: center;
-    margin: auto;
+    margin: 30px auto;
     padding: 20px;
     width: 350px;
     background: #e2daeb;
-    margin: 30px;
     border-radius: 15px;
 }
 
