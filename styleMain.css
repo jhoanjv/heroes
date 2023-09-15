@@ -41,11 +41,16 @@ section{
 
 article{
     text-align: center;
-    margin: 30px auto;
+    margin: 0 auto 30px auto;
     padding: 20px;
     width: 350px;
     background: #e2daeb;
     border-radius: 15px;
+    transition: all .25s;
+}
+
+article:hover{
+    background: #bcb5c4; 
 }
 
 li{
